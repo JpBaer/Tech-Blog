@@ -1,0 +1,112 @@
+*{
+    background-color: rgb(35, 106, 106);
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+  }
+
+h1 {
+
+    text-align: center;
+    color: #fff;
+    margin: 10px;
+}
+
+nav {
+    background-color: rgb(78, 192, 192);
+    color:#fff;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    border: #fff;
+    padding: 10px;
+}
+
+hr {
+    width:50%;
+}
+
+.card {
+    color:black;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    border-color: #fff;
+    box-shadow: inset;
+}
+
+.card h2{
+    color: black;
+    background-color: #fff;
+}
+
+.card h4{
+    color: rgb(28, 28, 28);
+    background-color: #fff;
+    font-size: 20px;
+}
+
+.card p{
+    color: black;
+    background-color: #fff;
+}
+
+.card header{
+    background-color: #fff;
+}
+
+aside {
+    flex: 0;
+    background-color: var(--tertiary);
+    padding: 80px;
+    text-align: left;
+    color: var(--light);
+  }
+
+
+.blog {
+    flex: 4;
+    background-color: #fff;
+    padding: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+.commentDiv {
+    display: flex;
+    background-color: #fff;
+    flex-flow: column wrap;
+    padding: 10px 0px 0px 10px;
+    margin-top: 5px;
+}  
+
+.commentDiv h4{
+    background-color: #fff;
+    
+}  
+
+.commentDiv p{
+    background-color: #fff;
+}  
+
+#logout{
+    border:none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}

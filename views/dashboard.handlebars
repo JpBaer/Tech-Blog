@@ -1,0 +1,32 @@
+<aside>
+    <h2>{{username}}</h2>
+    <form class="form new-blog-form">
+      <div class="form-group">
+        <label for="blog-title">Blog Title:</label>
+        <input class="form-input" type="text" id="blog-title" name="blog-title" />
+      </div>
+      
+      <div class="form-group">
+        <label for="blog-content">Content:</label>
+        <textarea class="form-input" id="blog-content" name="blog-content"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Create</button>
+      </div>
+    </form>
+
+</aside>
+
+<section>
+ {{#each posts as |post|}}
+<section class="card">
+  <a href="/post/{{post.id}}">
+    <header><h2>{{post.title}}</h2>
+    <hr>
+    <p>{{post.content}}</p>
+  </a>
+</section>
+{{/each}}
+</section>
+
+<script src="/js/dashboard.js"></script>

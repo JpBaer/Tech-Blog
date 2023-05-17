@@ -1,0 +1,28 @@
+<section>
+  {{!-- <a href="/post/{{id}}"> --}}
+    <header><h2>{{title}}</h2>
+    <hr>
+    <p>{{content}}</p>
+
+    <hr>
+     <form class="form new-comment-form" data-post={{id}}>
+      <div class="form-group">
+        <label for="comment">Comment:</label>
+        <input class="form-input" type="text" id="comment" name="comment" />
+      </div>
+      
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Create</button>
+      </div>
+    </form>
+    <hr>
+
+    {{#each comments as |comment|}}
+    <div class = "commentDiv">
+    <h4>{{comment.user.username}} commented:</h4>
+    <p>{{comment.content}}</p>
+    </div>
+    {{/each}}
+  {{!-- </a> --}}
+</section>
+<script src = "/js/comment.js"></script>
